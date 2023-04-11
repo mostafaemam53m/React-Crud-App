@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  margin: 20px auto;
+  border: 24px inset rgb(238, 232, 232);
+  display: flex;
+  flex-direction: column;
+
+}
+
+.App>h2 {
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: capitalize;
+  background-color: red;
+}
+
+.App>form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 10px 10px 10px;
+}
+
+.App>form input[type="text"] {
+  flex-basis: 80%;
+  padding: 10px;
+  outline: none;
+  font-weight: 900;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  text-align: center;
+  background: none;
+
+}
+
+.App>form input[type="submit"] {
+
+  flex-basis: 20%;
+  padding: 10px;
+  color: white;
+  background-color: green;
+  font-weight: 900;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.App>ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.App>ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin: 10px 17px 0px 0px;
+  gap: 4px;
+  flex-basis: 100%;
+}
+
+.App>ul li span {
+  display: block;
+  text-align: left;
+  flex-basis: 59%;
+  /* border: 2px solid; */
+  padding: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.App>ul li button {
+  flex-basis: 21%;
+  padding: 20px 2px;
+  text-align: center;
+  font-weight: 900;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius: 21%;
+  transition: 0.3s;
+
+}
+
+.App>ul li button:last-child {
+  background-color: red;
+
+}
+
+/* this show when click on edit button  */
+.App>ul form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 17px 5px 0px;
+  gap: 9px;
+  transition: 0.3s;
+}
+
+.App>ul form input[type="text"] {
+  flex-basis: 80%;
+  padding: 20px;
+  outline: none;
+  font-weight: 900;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  text-align: center;
+  background: none;
+}
+
+.App>ul form input[type="submit"] {
+  flex-basis: 21%;
+  padding: 20px 2px;
+  text-align: center;
+  font-weight: 900;
+  cursor: pointer;
+  background-color: rgb(8, 194, 32);
+  color: white;
+  border-radius: 21%;
+}
+
+.App .no_found_course {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee8e8;
+  margin: 0px 10px 20px 10px;
+}
+
+.App .no_found_course p {
+  font-size: 17px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  padding: 3px;
+  font-family: emoji;
+  font-weight: 600;
+}
